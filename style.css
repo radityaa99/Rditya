@@ -1,0 +1,849 @@
+ /* Base styles */
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;     
+  height: 100vh; 
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar-logo img {
+  width: 70px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+/* social */
+.social-container {
+  position: fixed;
+  top: 75%;
+  right: 20px;
+  transform: translateY(-50%) scale(0.9); /* Mengecilkan ukuran container */
+  background-color: #f0f1f3;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 8px; /* Mengurangi padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Mengurangi jarak antar elemen */
+}
+
+/* css X and git */ 
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/* css DC */
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn-DC {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer-DC {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG-DC {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #7289da;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn-DC:hover .BG-DC {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn-DC:hover .svgContainer-DC {
+  border: 1px solid rgba(206, 206, 206, 0.466);
+  background-color: rgba(214, 214, 214, 0.466);
+  backdrop-filter: blur(4px);
+}
+/* css IG */
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn-IG {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer-IG {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG-IG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn-IG:hover .BG-IG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn-IG:hover .svgContainer-IG {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+
+
+/* Profile setting */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 200px;
+  padding: 100px;
+  background-color: transparent;
+  margin-top: 80px;
+}
+
+.text-section {
+  max-width: 50%;
+  text-align: left;
+}
+
+.text-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.text-section h2 {
+  font-size: 40px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.text-section .button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.image-section .caption {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.image-section .caption strong {
+  font-weight: bold;
+}
+
+/* bio css */
+.container-bio {
+  max-width: 800px;
+  margin: 150px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+.header p {
+  font-size: 18px;
+  color: #666666;
+  padding: 10px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.skills img {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+}
+.details {
+display: flex;
+margin-top: 30px;
+padding: 20px;
+background-color: #f7f7f7;
+border-radius: 10px;
+}
+.details div {
+  flex: 1; /* Membuat div dalam details memiliki ukuran yang sama */
+  padding: 10px; /* Padding dalam setiap div */
+  width: 45%; /* Mengatur lebar div agar rapi pada layar besar */
+}
+
+.details span {
+  margin-bottom: 10px; /* Menambahkan jarak bawah pada setiap span */
+  margin-bottom: 10px; /* Menambahkan jarak bawah pada setiap span */
+  font-weight: bold; /* Membuat teks span menjadi tebal */
+}
+
+.details div br {
+  display: none; /* Menyembunyikan br agar tidak terlihat pada tampilan */
+}
+
+/* Jika ingin menampilkan jarak antara setiap informasi */
+.details div span + br {
+  display: inline; /* Tampilkan br yang mengikuti span */
+  margin-bottom: 5px; /* Jarak antara informasi */
+}
+
+
+#skills {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    margin-top: 0;
+}
+
+/* project */
+.myproject {
+  max-width: 1278px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.proj {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 80px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.imgproject {
+  width: 100%;
+  height: 150px;
+}
+
+.project-info{
+padding: 15px;
+text-align: left
+}
+
+.project-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.project-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+
+/* Modal styling */
+.modal {
+  display: none; /* Hanya terlihat saat modal dibuka */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 800px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  width: 80%; /* Membuat gambar lebih kecil dari modal */
+  max-width: 600px;
+  height: 278px;
+  display: block;
+  margin: 20px auto 0; /* Jarak atas gambar ditambah agar lebih renggang */
+  border-radius:10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.carousel-content {
+  padding: 20px;
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.carousel-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.carousel-content p {
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.modal-header .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ukuran diperbesar */
+  padding: 10px; /* Menambah padding agar area klik lebih besar */
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-header .close-btn:hover {
+  background-color: red; /* Warna latar saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+
+/* Styling untuk seluruh footer */
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0; /* Reduced padding */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #5d00d6e3;
+  margin: 5px 0; /* Reduced top and bottom spacing */
+}
+
+/* Copyright section */
+.copyright p {
+  margin: 3px 0; /* Reduced spacing between paragraphs */
+  font-size: 12px; /* Smaller font size */
+  color: #ffffff;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  /* Navbar */
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-content p {
+    width:310px;
+  }
+
+  /* Project Card */
+  .project-card {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .social-container {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    transform: translateY(0);
+    gap: 10px; /* Mengurangi jarak antar elemen */
+    padding: 6px; /* Menyesuaikan padding untuk layar kecil */
+  }
+  /* Container */
+  .container {
+    flex-direction: column; /* Atur layout jadi kolom di layar kecil */
+    text-align: left; /* Sesuaikan teks ke kiri */
+    padding: 20px; /* Sesuaikan padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    }
+
+  .details div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+/* modal */
+.modal {
+  display: none; /* Hanya terlihat saat modal dibuka */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  width: 80%; /* Membuat gambar lebih kecil dari modal */
+  max-width: 600px;
+  height: 178px;
+  display: block;
+  margin: 20px auto 0; /* Jarak atas gambar ditambah agar lebih renggang */
+  border-radius:10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.carousel-content {
+  padding: 20px;
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.carousel-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.carousel-content p {
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.modal-header .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ukuran diperbesar */
+  padding: 10px; /* Menambah padding agar area klik lebih besar */
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-header .close-btn:hover {
+  background-color: red; /* Warna latar saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+  /* Profile and Bio Section */
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    width: 90%;
+  }
+
+
+}
+
+
+/* Responsive for iPad (Landscape and Portrait) */
+@media (min-width: 768px) and (max-width: 1020px) {
+  /* Navbar */
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  .social-container {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    transform: translateY(0);
+    gap: 10px; /* Mengurangi jarak antar elemen */
+    padding: 6px; /* Menyesuaikan padding untuk layar kecil */
+  }
+
+  /* Setelah layout baru di-load */
+  .social-container.transitioned {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .navbar-links a {
+    padding: 10px 15px;
+    text-align: left;
+  }
+
+  /* Project Card */
+  .project-card {
+    flex: 0 0 45%; /* Atur 2 kolom untuk ukuran iPad */
+    margin: 10px;
+    width:200px;
+  }
+
+  /* Container */
+  .container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row; /* Row layout untuk ukuran lebih besar */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .details {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .details div {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* Profile and Bio Section */
+  .text-section {
+    max-width: 60%; /* Atur max-width agar tampilan lebih seimbang */
+    text-align: left;
+  }
+
+  .image-section img {
+    max-width: 80%; /* Lebar gambar lebih kecil agar lebih proporsional */
+    height: auto;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    width: 70%; /* Modal dengan ukuran lebih kecil */
+  }
+
+  /* Carousel Image */
+  .carousel img {
+    max-width: 100%; /* Gambar responsif */
+    height: auto;
+  }
+}
+
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #000000, #da1bca);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: lightblue;
+}
+
+/* Text Area and Input Caret */
+* {
+  caret-color: transparent;
+}
+
+input, textarea {
+  caret-color: initial;
+}
