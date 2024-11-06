@@ -14,8 +14,6 @@ const modalImages = {
     ],
     modal2: [
         "image/responsiveweb.png",
-        "https://placehold.co/800x400?text=Modal+2+Image+2",
-        "https://placehold.co/800x400?text=Modal+2+Image+3"
     ],
     modal3: [
         "image/Screenshot 2024-10-21 184431 (1).png",
